@@ -9,17 +9,15 @@
 
 .header-top{
     .nav-class();
-    margin: 0.7vw 0;
+    margin-top: 1vw;
 }
 
 .nav-links{
-    width: 50%;
     .nav-links();
 }
 
 .nav-links > a{
     text-decoration: none;
-    font-color:black;
     font-size: 1.5rem;
 }
 
@@ -31,3 +29,10 @@
     .custom-btn();
 }
 
+.content-pick{
+    @media @mobile{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+}
