@@ -7,9 +7,13 @@
 @import 'footer.less';
 @import 'home-page.less';
 
+/* body{
+    background-color: purple
+} */
+
 .header-top{
     .nav-class();
-    margin-top: 1vw;
+       border-bottom: 2px dashed @navigation-border;
 }
 
 .nav-links{
@@ -19,10 +23,11 @@
 .nav-links > a{
     text-decoration: none;
     font-size: 1.5rem;
+    color: black;
 }
 
 .main-img-hp{
-    margin: 0.7vw 0vw;
+    margin: 0.0vw 0vw;
 }
 
 .btn{
@@ -30,9 +35,32 @@
 }
 
 .content-pick{
+    
     @media @mobile{
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
+}
+
+h1{
+    @media @mobile{
+        font-size:3.2rem;
+    }
+}
+
+.content-section{
+    @media @mobile{
+        display:flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+    }
+}
+
+.inverse-content{
+    @media @mobile{
+        display:flex;
+        flex-direction:column-reverse;
+        flex-wrap: wrap;
+    }
 }

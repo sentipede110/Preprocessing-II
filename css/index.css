@@ -217,11 +217,21 @@ img {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 90%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
-.home .content-section .img-content img {
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 90%;
+  }
+}
+.home .content-section img {
   border-radius: 10px;
 }
 .home .inverse-content {
@@ -232,6 +242,11 @@ img {
   padding-left: 1%;
   padding-right: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    width: 90%;
+  }
+}
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
@@ -239,6 +254,11 @@ img {
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 90%;
+  }
 }
 .home .content-destination img {
   border-radius: 10px;
@@ -249,14 +269,22 @@ img {
   display: flex;
   justify-content: space-between;
 }
-.home .content-pick .destination {
+.home .destination {
   width: 30%;
   margin-bottom: 30px;
 }
+@media (max-width: 500px) {
+  .home .destination {
+    width: 80%;
+  }
+}
+/* body{
+    background-color: purple
+} */
 .header-top {
   display: flex;
   justify-content: space-between;
-  margin-top: 1vw;
+  border-bottom: 2px dashed #C0C0C0;
 }
 @media (max-width: 500px) {
   .header-top {
@@ -281,9 +309,10 @@ img {
 .nav-links > a {
   text-decoration: none;
   font-size: 1.5rem;
+  color: black;
 }
 .main-img-hp {
-  margin: 0.7vw 0vw;
+  margin: 0vw 0vw;
 }
 .btn {
   background-color: #17A2B8;
@@ -302,6 +331,25 @@ img {
   .content-pick {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+}
+@media (max-width: 500px) {
+  .content-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 500px) {
+  .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
   }
 }
