@@ -278,9 +278,9 @@ img {
     width: 80%;
   }
 }
-/* body{
-    background-color: purple
-} */
+body {
+  width: 100vw;
+}
 .header-top {
   display: flex;
   justify-content: space-between;
